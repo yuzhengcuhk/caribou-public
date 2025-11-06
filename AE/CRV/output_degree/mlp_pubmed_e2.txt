@@ -1,0 +1,147 @@
+[17:27:48] INFO     importing modules...done in 2.36 s                                                        train.py:16
+
+           INFO                           program arguments                                                  utils.py:156
+                     ────────────────────────────────────────────────────────────                                        
+                      method:         mlp-dp        weight_decay:     0.0                                                
+                      dataset:        pubmed        full_batch_eval:  True                                               
+                      data_dir:       exp_datasets  device:           cuda:0                                             
+                      delta:          auto          val_interval:     1                                                  
+                      max_grad_norm:  1.0           seed:             12345                                              
+                      batch_size:     64            repeats:          10                                                 
+                      hidden_dim:     64            csbm_phi:         0.0                                                
+                      num_layers:     3             debug:            False                                              
+                      activation:     selu          logger:           csv                                                
+                      dropout:        0.0           project:          MLP/node/2                                         
+                      epochs:         100           output_dir:       ./output                                           
+                      optimizer:      adam          epsilon:          2.0                                                
+                      learning_rate:  0.001                                                                              
+                     ────────────────────────────────────────────────────────────                                        
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                    loader.py:151
+                     ────────────────────────────────────────────────────────                                            
+                      nodes:     19,717  mean degree:         4.50                                                       
+                      edges:     88,648  median degree:       2.0                                                        
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                             
+                      classes:   3       baseline acc (%):    40.45                                                      
+                     ────────────────────────────────────────────────────────                                            
+
+           INFO     loading dataset...done in 0.53 s                                                          train.py:35
+           INFO     delta = %.0e 1e-05                                                                       mlp_dp.py:50
+[17:27:51] INFO     noise scale: 3.0235                                                                      mlp_dp.py:53
+                                                                                                                         
+           INFO     calibrating noise to privacy budget...done in 2.56 s                                     mlp_dp.py:53
+[17:27:52] INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:53              
+                       train/acc: 78.735 train/loss: 0.604  val/acc: 79.919 val/loss: 0.584                              
+                                                                                                                         
+[17:29:45] INFO                run 1                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   78.44   78.44                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:00              
+                       train/acc: 78.946 train/loss: 0.637  val/acc: 79.158 val/loss: 0.613                              
+                                                                                                                         
+[17:31:46] INFO                run 2                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   78.42   78.43                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:12              
+                       train/acc: 77.740 train/loss: 0.656  val/acc: 78.144 val/loss: 0.634                              
+                                                                                                                         
+[17:33:58] INFO                run 3                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   77.28   78.05                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:08              
+                       train/acc: 79.557 train/loss: 0.603  val/acc: 79.209 val/loss: 0.603                              
+                                                                                                                         
+[17:36:07] INFO                run 4                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   79.38   78.38                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:06              
+                       train/acc: 78.488 train/loss: 0.633  val/acc: 78.854 val/loss: 0.614                              
+                                                                                                                         
+[17:38:14] INFO                run 5                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   78.98   78.50                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:09              
+                       train/acc: 79.244 train/loss: 0.603  val/acc: 79.767 val/loss: 0.566                              
+                                                                                                                         
+[17:40:23] INFO                run 6                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   79.18   78.61                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:08              
+                       train/acc: 79.637 train/loss: 0.623  val/acc: 79.665 val/loss: 0.600                              
+                                                                                                                         
+[17:42:31] INFO                run 7                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   79.18   78.69                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:07              
+                       train/acc: 77.137 train/loss: 0.635  val/acc: 77.840 val/loss: 0.613                              
+                                                                                                                         
+[17:44:39] INFO                run 8                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   77.66   78.56                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:07              
+                       train/acc: 78.089 train/loss: 0.639  val/acc: 79.108 val/loss: 0.587                              
+                                                                                                                         
+[17:46:46] INFO                run 9                                                                          train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   78.75   78.58                                                                           
+                     ──────────────────────────                                                                          
+
+           INFO     training classifier                                                                        base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:07              
+                       train/acc: 80.153 train/loss: 0.573  val/acc: 81.085 val/loss: 0.562                              
+                                                                                                                         
+[17:48:54] INFO                run 10                                                                         train.py:74
+                     ──────────────────────────                                                                          
+                      metric     last    mean                                                                            
+                     ──────────────────────────                                                                          
+                      test/acc   80.60   78.79                                                                           
+                     ──────────────────────────                                                                          
+
+
+           INFO     Total running time: 1266.16 seconds.                                                     train.py:127
+           INFO     Max GPU memory used = 0.10 GB                                                            train.py:136
+                                                                                                                         

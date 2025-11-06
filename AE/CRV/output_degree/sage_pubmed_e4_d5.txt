@@ -1,0 +1,41 @@
+[17:38:34] INFO     importing modules...done in 1.75 s                                                                                                                                train.py:16
+
+           INFO                            program arguments                                                                                                                         utils.py:156
+                     ─────────────────────────────────────────────────────────────                                                                                                               
+                      method:         sage-ndp      optimizer:        adam                                                                                                                       
+                      dataset:        pubmed        learning_rate:    0.001                                                                                                                      
+                      data_dir:       exp_datasets  weight_decay:     0.0                                                                                                                        
+                      delta:          auto          full_batch_eval:  True                                                                                                                       
+                      max_degree:     5             device:           cuda:0                                                                                                                     
+                      max_grad_norm:  1.0           seed:             12345                                                                                                                      
+                      batch_size:     256           repeats:          10                                                                                                                         
+                      output_gdp:     1             csbm_phi:         0.0                                                                                                                        
+                      hidden_dim:     64            debug:            False                                                                                                                      
+                      base_layers:    2             logger:           csv                                                                                                                        
+                      head_layers:    1             project:          SAGE/node/4                                                                                                                
+                      activation:     selu          output_dir:       ./output                                                                                                                   
+                      dropout:        0.0           epsilon:          4.0                                                                                                                        
+                      epochs:         100                                                                                                                                                        
+                     ─────────────────────────────────────────────────────────────                                                                                                               
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                                                                                            loader.py:151
+                     ────────────────────────────────────────────────────────                                                                                                                    
+                      nodes:     19,717  mean degree:         4.50                                                                                                                               
+                      edges:     88,648  median degree:       2.0                                                                                                                                
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                                                                                                     
+                      classes:   3       baseline acc (%):    40.45                                                                                                                              
+                     ────────────────────────────────────────────────────────                                                                                                                    
+
+           INFO     loading dataset...done in 0.04 s                                                                                                                                  train.py:35
+[17:38:35] INFO     delta = 1e-05                                                                                                                                                  sage_ndp.py:98
+[17:38:37] INFO     noise scale: 5.1013                                                                                                                                           sage_ndp.py:101
+                                                                                                                                                                                                 
+           INFO     calibrating noise to privacy budget...done in 2.57 s                                                                                                          sage_ndp.py:101
+[17:38:38] INFO     bounding the number of neighbors per node...done in 0.02 s                                                                                                    sage_ndp.py:108
+           INFO     training classifier                                                                                                                                                base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:33                                                                                      
+                       train/acc: 58.967 train/loss: 0.972                                                                                                                                       
+                                                                                                                                                                                                 
+[17:39:11] INFO     Max GPU memory used = 0.27 GB                                                                                                                                    train.py:136
+                                                                                                                                                                                                 

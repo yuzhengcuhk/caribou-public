@@ -1,0 +1,531 @@
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 0.1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:10:58] INFO     importing modules...done in 1.77 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.05 s                                                       train.py:35
+[15:10:59] INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 0.1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:11:01] INFO     importing modules...done in 1.76 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+[15:11:02] INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.04 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:11:05] INFO     importing modules...done in 1.74 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:11:08] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 10 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:11:11] INFO     importing modules...done in 1.73 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             10.0                                          
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 10 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:11:14] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             10.0                                          
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.04 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 20 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:11:17] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             20.0                                          
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.04 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 20 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:11:20] INFO     importing modules...done in 1.72 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             20.0                                          
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 14.3910                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.04 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 0.1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.8
+[15:11:23] INFO     importing modules...done in 1.77 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.8           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 11.0637                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+[15:11:24] INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 0.1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.8
+[15:11:26] INFO     importing modules...done in 1.74 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.8           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+[15:11:27] INFO     noise scale: 11.0637                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.8
+[15:11:29] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.8           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+[15:11:30] INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 11.0637                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.8
+[15:11:32] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          pubmed        fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.8           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader pubmed exp_datasets
+           INFO                          dataset: pubmed                                                 loader.py:151
+                     ────────────────────────────────────────────────────────                                         
+                      nodes:     19,717  mean degree:         4.50                                                    
+                      edges:     88,648  median degree:       2.0                                                     
+                      features:  500     train/val/test (%):  70.0/10.0/20.0                                          
+                      classes:   3       baseline acc (%):    40.45                                                   
+                     ────────────────────────────────────────────────────────                                         
+
+           INFO     loading dataset...done in 0.04 s                                                       train.py:35
+[15:11:33] INFO     delta = 1e-05                                                                       gcn_ndp.py:175
+           INFO     noise scale: 11.0637                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.02 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.27 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is pubmed
+the value of beta is 10 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.8
+[15:11:35] INFO     importing modules...done in 1.47 s                                                     train.py:16

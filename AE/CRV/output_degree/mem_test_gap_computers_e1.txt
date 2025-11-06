@@ -1,0 +1,95 @@
+the value of hops is 20 ; the dataset is computers
+[19:39:07] INFO     importing modules...done in 1.79 s                                             train.py:16
+
+           INFO                           program arguments                                       utils.py:156
+                     ───────────────────────────────────────────────────────────                              
+                      method:          gap-ndp       epochs:           100                                    
+                      dataset:         computers     optimizer:        adam                                   
+                      data_dir:        exp_datasets  learning_rate:    0.001                                  
+                      delta:           auto          weight_decay:     0.0                                    
+                      max_degree:      20            full_batch_eval:  True                                   
+                      max_grad_norm:   1.0           device:           cuda:0                                 
+                      batch_size:      256           val_interval:     1                                      
+                      hops:            20            seed:             12345                                  
+                      hidden_dim:      64            repeats:          3                                      
+                      encoder_layers:  2             csbm_phi:         0.0                                    
+                      base_layers:     1             debug:            False                                  
+                      head_layers:     1             logger:           csv                                    
+                      combine:         cat           project:          GAP                                    
+                      activation:      selu          output_dir:       ./output                               
+                      dropout:         0.5           epsilon:          1.0                                    
+                      encoder_epochs:  100                                                                    
+                     ───────────────────────────────────────────────────────────                              
+
+DatasetLoader computers exp_datasets
+           INFO                         dataset: computers                                       loader.py:151
+                     ─────────────────────────────────────────────────────────                                
+                      nodes:     13,471   mean degree:         36.50                                          
+                      edges:     491,722  median degree:       23.0                                           
+                      features:  767      train/val/test (%):  70.0/10.0/20.0                                 
+                      classes:   10       baseline acc (%):    36.71                                          
+                     ─────────────────────────────────────────────────────────                                
+
+           INFO     loading dataset...done in 0.16 s                                               train.py:35
+           INFO     delta = 1e-04                                                                gap_ndp.py:76
+[19:39:11] INFO     noise scale: 22.7189                                                         gap_ndp.py:79
+                                                                                                              
+           INFO     calibrating noise to privacy budget...done in 4.43 s                         gap_ndp.py:79
+[19:39:12] INFO     pretraining encoder                                                         gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:35   
+                       encoder/train/acc: 37.261 encoder/train/loss: 1.916  encoder/val/acc: 40.429           
+                       encoder/val/loss: 1.830                                                                
+                                                                                                              
+[19:39:47] INFO     bounding the number of neighbors per node...done in 0.14 s                   gap_ndp.py:96
+           INFO     computing aggregations...done in 0.01 s                                     gap_inf.py:221
+           INFO     training classifier                                                             base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:18   
+                       train/acc: 36.437 train/loss: 1.964  val/acc: 40.429 val/loss: 1.866                   
+                                                                                                              
+[19:41:06] INFO                run 1                                                               train.py:74
+                     ──────────────────────────                                                               
+                      metric     last    mean                                                                 
+                     ──────────────────────────                                                               
+                      test/acc   36.71   36.71                                                                
+                     ──────────────────────────                                                               
+
+           INFO     pretraining encoder                                                         gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:17   
+                       encoder/train/acc: 37.261 encoder/train/loss: 1.923  encoder/val/acc: 40.429           
+                       encoder/val/loss: 1.826                                                                
+                                                                                                              
+[19:41:24] INFO     bounding the number of neighbors per node...done in 0.16 s                   gap_ndp.py:96
+           INFO     computing aggregations...done in 0.01 s                                     gap_inf.py:221
+           INFO     training classifier                                                             base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:25  
+                       train/acc: 36.860 train/loss: 1.982  val/acc: 40.429 val/loss: 1.873                  
+                                                                                                             
+[19:42:49] INFO                run 2                                                              train.py:74
+                     ──────────────────────────                                                              
+                      metric     last    mean                                                                
+                     ──────────────────────────                                                              
+                      test/acc   36.71   36.71                                                               
+                     ──────────────────────────                                                              
+
+           INFO     pretraining encoder                                                        gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:49  
+                       encoder/train/acc: 36.925 encoder/train/loss: 1.916  encoder/val/acc: 40.429          
+                       encoder/val/loss: 1.812                                                               
+                                                                                                             
+[19:43:39] INFO     bounding the number of neighbors per node...done in 0.15 s                  gap_ndp.py:96
+           INFO     computing aggregations...done in 0.01 s                                    gap_inf.py:221
+           INFO     training classifier                                                            base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:18  
+                       train/acc: 36.328 train/loss: 1.980  val/acc: 40.429 val/loss: 1.868                  
+                                                                                                             
+[19:44:58] INFO                run 3                                                              train.py:74
+                     ──────────────────────────                                                              
+                      metric     last    mean                                                                
+                     ──────────────────────────                                                              
+                      test/acc   36.71   36.71                                                               
+                     ──────────────────────────                                                              
+
+
+           INFO     Total running time: 351.83 seconds.                                          train.py:127
+           INFO     Max GPU memory used = 319.80 MB                                              train.py:136
+                                                                                                             

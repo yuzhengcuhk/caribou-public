@@ -1,0 +1,158 @@
+[00:42:03] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                            program arguments                                              utils.py:156
+                     ──────────────────────────────────────────────────────────────                                   
+                      method:         sage-ndp      optimizer:        adam                                            
+                      dataset:        computers     learning_rate:    0.001                                           
+                      data_dir:       exp_datasets  weight_decay:     0.0                                             
+                      delta:          auto          full_batch_eval:  True                                            
+                      max_degree:     5             device:           cuda:0                                          
+                      max_grad_norm:  1.0           seed:             12345                                           
+                      batch_size:     256           repeats:          10                                              
+                      output_gdp:     1             csbm_phi:         0.0                                             
+                      hidden_dim:     64            debug:            False                                           
+                      base_layers:    2             logger:           csv                                             
+                      head_layers:    1             project:          SAGE/node/16                                    
+                      activation:     selu          output_dir:       ./output                                        
+                      dropout:        0.0           epsilon:          16.0                                            
+                      epochs:         100                                                                             
+                     ──────────────────────────────────────────────────────────────                                   
+
+DatasetLoader computers exp_datasets
+           INFO                         dataset: computers                                               loader.py:151
+                     ─────────────────────────────────────────────────────────                                        
+                      nodes:     13,471   mean degree:         36.50                                                  
+                      edges:     491,722  median degree:       23.0                                                   
+                      features:  767      train/val/test (%):  70.0/10.0/20.0                                         
+                      classes:   10       baseline acc (%):    36.71                                                  
+                     ─────────────────────────────────────────────────────────                                        
+
+           INFO     loading dataset...done in 0.10 s                                                       train.py:35
+           INFO     delta = 1e-04                                                                       sage_ndp.py:98
+[00:42:05] INFO     noise scale: 1.5140                                                                sage_ndp.py:101
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 1.92 s                               sage_ndp.py:101
+[00:42:06] INFO     bounding the number of neighbors per node...done in 0.06 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:22           
+                       train/acc: 75.104 train/loss: 0.839                                                            
+                                                                                                                      
+[00:42:28] INFO                run 1                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.70   32.70                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.06 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 75.230 train/loss: 0.852                                                            
+                                                                                                                      
+[00:42:50] INFO                run 2                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.85   32.78                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:22           
+                       train/acc: 74.899 train/loss: 0.855                                                            
+                                                                                                                      
+[00:43:12] INFO                run 3                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.37   32.64                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 75.431 train/loss: 0.841                                                            
+                                                                                                                      
+[00:43:34] INFO                run 4                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.93   32.71                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 73.743 train/loss: 0.864                                                            
+                                                                                                                      
+[00:43:56] INFO                run 5                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.96   32.76                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 72.840 train/loss: 0.875                                                            
+                                                                                                                      
+[00:44:18] INFO                run 6                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   31.89   32.62                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 73.251 train/loss: 0.901                                                            
+                                                                                                                      
+[00:44:40] INFO                run 7                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   33.18   32.70                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:22           
+                       train/acc: 73.992 train/loss: 0.843                                                            
+                                                                                                                      
+[00:45:02] INFO                run 8                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.70   32.70                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:21           
+                       train/acc: 74.107 train/loss: 0.852                                                            
+                                                                                                                      
+[00:45:24] INFO                run 9                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   33.00   32.73                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.06 s                         sage_ndp.py:108
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:22           
+                       train/acc: 74.379 train/loss: 0.855                                                            
+                                                                                                                      
+[00:45:46] INFO                run 10                                                                      train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   32.44   32.70                                                                        
+                     ──────────────────────────                                                                       
+
+
+           INFO     Total running time: 222.97 seconds.                                                   train.py:127
+           INFO     Max GPU memory used = 0.70 GB                                                         train.py:136
+                                                                                                                      

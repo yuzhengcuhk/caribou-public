@@ -1,0 +1,83 @@
+[13:02:10] INFO     importing modules...done in 1.80 s                                                                                                                                train.py:16
+
+           INFO                               program arguments                                                                                                                      utils.py:156
+                     ────────────────────────────────────────────────────────────────────                                                                                                        
+                      method:               dpdgc-ndp     encoder_dropout:  0.0                                                                                                                  
+                      dataset:              photo         norm_scale:       1e-08                                                                                                                
+                      data_dir:             exp_datasets  epochs:           100                                                                                                                  
+                      delta:                auto          optimizer:        adam                                                                                                                 
+                      max_degree:           5             learning_rate:    0.001                                                                                                                
+                      max_grad_norm:        1.0           weight_decay:     0.0                                                                                                                  
+                      batch_size:           256           full_batch_eval:  True                                                                                                                 
+                      hidden_dim:           64            device:           cuda:0                                                                                                               
+                      encoder_head_layers:  1             val_interval:     1                                                                                                                    
+                      base_layers:          2             seed:             12345                                                                                                                
+                      head_layers:          1             repeats:          10                                                                                                                   
+                      combine:              cat           csbm_phi:         0.0                                                                                                                  
+                      activation:           selu          debug:            False                                                                                                                
+                      dropout:              0.0           logger:           csv                                                                                                                  
+                      encoder_epochs:       100           project:          DPDGC/ndp/1/                                                                                                         
+                      encoder_lr:           0.001         output_dir:       ./output                                                                                                             
+                      encoder_wd:           1e-05         epsilon:          1.0                                                                                                                  
+                     ────────────────────────────────────────────────────────────────────                                                                                                        
+
+DatasetLoader photo exp_datasets
+           INFO                           dataset: photo                                                                                                                            loader.py:151
+                     ─────────────────────────────────────────────────────────                                                                                                                   
+                      nodes:     7,535    mean degree:         31.61                                                                                                                             
+                      edges:     238,162  median degree:       22.0                                                                                                                              
+                      features:  745      train/val/test (%):  70.0/10.0/20.0                                                                                                                    
+                      classes:   8        baseline acc (%):    24.06                                                                                                                             
+                     ─────────────────────────────────────────────────────────                                                                                                                   
+
+           INFO     loading dataset...done in 0.46 s                                                                                                                                  train.py:35
+           INFO     delta = 1e-04                                                                                                                                                 dpdgc_ndp.py:76
+[13:02:16] INFO     noise scale: 22.3113                                                                                                                                          dpdgc_ndp.py:79
+                                                                                                                                                                                                 
+           INFO     calibrating noise to privacy budget...done in 5.10 s                                                                                                          dpdgc_ndp.py:79
+           INFO     bounding the number of neighbors per node...done in 0.43 s                                                                                                    dpdgc_ndp.py:96
+debugging...data.x tensor([[0., 0., 0.,  ..., 0., 1., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 1., 0.,  ..., 0., 0., 1.],
+        ...,
+        [0., 1., 0.,  ..., 0., 0., 0.],
+        [1., 1., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 1.]], device='cuda:0') debugging...
+[13:02:17] INFO     pretraining adj encoder (MLP_A)                                                                                                                              dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:11                                                                                      
+                       encoder/train/acc: 26.525 encoder/train/loss: 2.042  encoder/val/acc: 20.927 encoder/val/loss: 2.048                                                                      
+                                                                                                                                                                                                 
+[13:02:28] INFO     adj encoder pretrain statistics                                                                                                                               dpdgc_inf.py:99
+           INFO     {                                                                                                                                                            dpdgc_inf.py:100
+                        'encoder/epoch': 28,                                                                                                                                                     
+                        'encoder/train/acc': 23.921131134033203,                                                                                                                                 
+                        'encoder/train/loss': 2.0677661895751953,                                                                                                                                
+                        'encoder/val/acc': 23.046358108520508,                                                                                                                                   
+                        'encoder/val/loss': 2.0680501461029053                                                                                                                                   
+                    }                                                                                                                                                                            
+           INFO     training classifier                                                                                                                                                base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:11                                                                                      
+                       train/acc: 42.207 train/loss: 1.602  val/acc: 40.132 val/loss: 1.634                                                                                                      
+                                                                                                                                                                                                 
+[13:02:40] INFO                run 1                                                                                                                                                  train.py:74
+                     ──────────────────────────                                                                                                                                                  
+                      metric     last    mean                                                                                                                                                    
+                     ──────────────────────────                                                                                                                                                  
+                      test/acc   42.21   42.21                                                                                                                                                   
+                     ──────────────────────────                                                                                                                                                  
+
+           INFO     bounding the number of neighbors per node...done in 0.05 s                                                                                                    dpdgc_ndp.py:96
+debugging...data.x tensor([[0., 0., 0.,  ..., 0., 1., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 1., 0.,  ..., 0., 0., 1.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 1., 0.,  ..., 0., 0., 0.],
+        [1., 1., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                                                                                              dpdgc_inf.py:125
+                     ⠋ overal progress   0/100 epochs                                            0% 0:00:00                                                                                      
+                     ⠋ training          0/21  steps                                             0% 0:00:00                                                                                      
+                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+           INFO     Max GPU memory used = 0.96 GB                                                                                                                                    train.py:136
+                                                                                                                                                                                                 

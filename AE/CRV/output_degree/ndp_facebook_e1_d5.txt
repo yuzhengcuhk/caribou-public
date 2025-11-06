@@ -1,0 +1,183 @@
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is facebook
+the value of beta is 0.1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:13:23] INFO     importing modules...done in 1.81 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          facebook      fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader facebook exp_datasets
+debugging...data/slice Data(x=[26803, 501], edge_index=[2, 2146470], y=[26803]) None debugging...
+           INFO                           dataset: facebook                                              loader.py:151
+                     ───────────────────────────────────────────────────────────                                      
+                      nodes:     26,406     mean degree:         80.21                                                
+                      edges:     2,117,924  median degree:       62.0                                                 
+                      features:  501        train/val/test (%):  70.0/10.0/20.0                                       
+                      classes:   6          baseline acc (%):    23.03                                                
+                     ───────────────────────────────────────────────────────────                                      
+
+           INFO     loading dataset...done in 0.26 s                                                       train.py:35
+[15:13:24] INFO     delta = 1e-07                                                                       gcn_ndp.py:175
+           INFO     noise scale: 18.0485                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.12 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.35 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is facebook
+the value of beta is 0.1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:13:26] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             0.1                                           
+                      dataset:          facebook      fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader facebook exp_datasets
+debugging...data/slice Data(x=[26803, 501], edge_index=[2, 2146470], y=[26803]) None debugging...
+           INFO                           dataset: facebook                                              loader.py:151
+                     ───────────────────────────────────────────────────────────                                      
+                      nodes:     26,406     mean degree:         80.21                                                
+                      edges:     2,117,924  median degree:       62.0                                                 
+                      features:  501        train/val/test (%):  70.0/10.0/20.0                                       
+                      classes:   6          baseline acc (%):    23.03                                                
+                     ───────────────────────────────────────────────────────────                                      
+
+           INFO     loading dataset...done in 0.26 s                                                       train.py:35
+[15:13:27] INFO     delta = 1e-07                                                                       gcn_ndp.py:175
+           INFO     noise scale: 18.0485                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.13 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.35 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is facebook
+the value of beta is 1 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:13:29] INFO     importing modules...done in 1.74 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          facebook      fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          1.0                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader facebook exp_datasets
+debugging...data/slice Data(x=[26803, 501], edge_index=[2, 2146470], y=[26803]) None debugging...
+[15:13:30] INFO                           dataset: facebook                                              loader.py:151
+                     ───────────────────────────────────────────────────────────                                      
+                      nodes:     26,406     mean degree:         80.21                                                
+                      edges:     2,117,924  median degree:       62.0                                                 
+                      features:  501        train/val/test (%):  70.0/10.0/20.0                                       
+                      classes:   6          baseline acc (%):    23.03                                                
+                     ───────────────────────────────────────────────────────────                                      
+
+           INFO     loading dataset...done in 0.26 s                                                       train.py:35
+           INFO     delta = 1e-07                                                                       gcn_ndp.py:175
+           INFO     noise scale: 18.0485                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.12 s                          gcn_ndp.py:192
+[15:13:31] INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.35 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is facebook
+the value of beta is 1 ; the value of alpha_1 is 0.9 ; the bound_lipschitz is 0.9
+[15:13:33] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                           program arguments                                               utils.py:156
+                     ────────────────────────────────────────────────────────────                                     
+                      method:           gcn-ndp       beta:             1.0                                           
+                      dataset:          facebook      fill_degree:      0                                             
+                      data_dir:         exp_datasets  epochs:           100                                           
+                      delta:            auto          optimizer:        adam                                          
+                      max_degree:       5             learning_rate:    0.001                                         
+                      hops:             20            batch_size:       full                                          
+                      hidden_dim:       64            full_batch_eval:  True                                          
+                      encoder_layers:   2             device:           cuda:0                                        
+                      base_layers:      1             val_interval:     1                                             
+                      head_layers:      1             seed:             12345                                         
+                      combine:          cat           repeats:          3                                             
+                      activation:       selu          csbm_phi:         0.0                                           
+                      dropout:          0.5           debug:            False                                         
+                      batch_norm:       True          logger:           csv                                           
+                      encoder_epochs:   100           project:          GAP                                           
+                      weight_decay:     0.01          output_dir:       ./output                                      
+                      bound_lipschitz:  0.9           epsilon:          1.0                                           
+                      alpha_1:          0.9                                                                           
+                     ────────────────────────────────────────────────────────────                                     
+
+DatasetLoader facebook exp_datasets
+debugging...data/slice Data(x=[26803, 501], edge_index=[2, 2146470], y=[26803]) None debugging...
+           INFO                           dataset: facebook                                              loader.py:151
+                     ───────────────────────────────────────────────────────────                                      
+                      nodes:     26,406     mean degree:         80.21                                                
+                      edges:     2,117,924  median degree:       62.0                                                 
+                      features:  501        train/val/test (%):  70.0/10.0/20.0                                       
+                      classes:   6          baseline acc (%):    23.03                                                
+                     ───────────────────────────────────────────────────────────                                      
+
+           INFO     loading dataset...done in 0.26 s                                                       train.py:35
+[15:13:34] INFO     delta = 1e-07                                                                       gcn_ndp.py:175
+           INFO     noise scale: 18.0485                                                                gcn_ndp.py:178
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 0.05 s                                gcn_ndp.py:178
+           INFO     bounding the number of neighbors per node...done in 0.12 s                          gcn_ndp.py:192
+           INFO     computing aggregations...done in 0.01 s                                             gcn_inf.py:326
+           INFO     Max GPU memory used = 0.35 GB                                                         train.py:136
+                                                                                                                      
+the value of epsilon is 1 ; the value of hops is 20 ; the dataset is facebook
+the value of beta is 10 ; the value of alpha_1 is 1 ; the bound_lipschitz is 0.9
+[15:13:36] INFO     importing modules...done in 1.55 s                                                     train.py:16

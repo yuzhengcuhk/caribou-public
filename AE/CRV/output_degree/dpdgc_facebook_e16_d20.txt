@@ -1,0 +1,362 @@
+[22:03:31] INFO     importing modules...done in 1.75 s                                                     train.py:16
+
+           INFO                                program arguments                                          utils.py:156
+                     ─────────────────────────────────────────────────────────────────────                            
+                      method:               dpdgc-ndp     encoder_dropout:  0.0                                       
+                      dataset:              facebook      norm_scale:       1e-08                                     
+                      data_dir:             exp_datasets  epochs:           100                                       
+                      delta:                auto          optimizer:        adam                                      
+                      max_degree:           20            learning_rate:    0.001                                     
+                      max_grad_norm:        1.0           weight_decay:     0.0                                       
+                      batch_size:           256           full_batch_eval:  True                                      
+                      hidden_dim:           64            device:           cuda:0                                    
+                      encoder_head_layers:  1             val_interval:     1                                         
+                      base_layers:          2             seed:             12345                                     
+                      head_layers:          1             repeats:          10                                        
+                      combine:              cat           csbm_phi:         0.0                                       
+                      activation:           selu          debug:            False                                     
+                      dropout:              0.0           logger:           csv                                       
+                      encoder_epochs:       100           project:          DPDGC/ndp/16/                             
+                      encoder_lr:           0.001         output_dir:       ./output                                  
+                      encoder_wd:           1e-05         epsilon:          16.0                                      
+                     ─────────────────────────────────────────────────────────────────────                            
+
+DatasetLoader facebook exp_datasets
+debugging...data/slice Data(x=[26803, 501], edge_index=[2, 2146470], y=[26803]) None debugging...
+           INFO                           dataset: facebook                                              loader.py:151
+                     ───────────────────────────────────────────────────────────                                      
+                      nodes:     26,406     mean degree:         80.21                                                
+                      edges:     2,117,924  median degree:       62.0                                                 
+                      features:  501        train/val/test (%):  70.0/10.0/20.0                                       
+                      classes:   6          baseline acc (%):    23.03                                                
+                     ───────────────────────────────────────────────────────────                                      
+
+           INFO     loading dataset...done in 0.27 s                                                       train.py:35
+           INFO     delta = 1e-05                                                                      dpdgc_ndp.py:76
+[22:03:36] INFO     noise scale: 1.4387                                                                dpdgc_ndp.py:79
+                                                                                                                      
+           INFO     calibrating noise to privacy budget...done in 4.28 s                               dpdgc_ndp.py:79
+           INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+[22:03:37] INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 21.859 encoder/train/loss: 1.714  encoder/val/acc: 21.932 encoder/val/loss: 
+                       1.712                                                                                          
+                                                                                                                      
+[22:05:17] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 85,                                                                          
+                        'encoder/train/acc': 23.15389633178711,                                                       
+                        'encoder/train/loss': 1.7104847431182861,                                                     
+                        'encoder/val/acc': 23.409090042114258,                                                        
+                        'encoder/val/loss': 1.714779257774353                                                         
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 52.159 train/loss: 1.483  val/acc: 52.424 val/loss: 1.527                           
+                                                                                                                      
+[22:05:55] INFO                run 1                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   49.39   49.39                                                                        
+                     ──────────────────────────                                                                       
+
+[22:05:56] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.003 encoder/train/loss: 1.716  encoder/val/acc: 22.538 encoder/val/loss: 
+                       1.717                                                                                          
+                                                                                                                      
+[22:07:35] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 95,                                                                          
+                        'encoder/train/acc': 22.39940071105957,                                                       
+                        'encoder/train/loss': 1.715731143951416,                                                      
+                        'encoder/val/acc': 22.84090805053711,                                                         
+                        'encoder/val/loss': 1.71746826171875                                                          
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 52.170 train/loss: 1.473  val/acc: 51.591 val/loss: 1.506                           
+                                                                                                                      
+[22:08:14] INFO                run 2                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   48.79   49.09                                                                        
+                     ──────────────────────────                                                                       
+
+[22:08:15] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.742 encoder/train/loss: 1.710  encoder/val/acc: 23.220 encoder/val/loss: 
+                       1.714                                                                                          
+                                                                                                                      
+[22:09:54] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 30,                                                                          
+                        'encoder/train/acc': 22.634845733642578,                                                      
+                        'encoder/train/loss': 1.735386848449707,                                                      
+                        'encoder/val/acc': 23.787878036499023,                                                        
+                        'encoder/val/loss': 1.7336225509643555                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 51.687 train/loss: 1.570  val/acc: 50.530 val/loss: 1.599                           
+                                                                                                                      
+[22:10:33] INFO                run 3                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   49.83   49.34                                                                        
+                     ──────────────────────────                                                                       
+
+[22:10:34] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.833 encoder/train/loss: 1.714  encoder/val/acc: 21.591 encoder/val/loss: 
+                       1.717                                                                                          
+                                                                                                                      
+[22:12:14] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 44,                                                                          
+                        'encoder/train/acc': 21.398757934570312,                                                      
+                        'encoder/train/loss': 1.7268123626708984,                                                     
+                        'encoder/val/acc': 23.333332061767578,                                                        
+                        'encoder/val/loss': 1.7274595499038696                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:39           
+                       train/acc: 52.110 train/loss: 1.541  val/acc: 51.326 val/loss: 1.593                           
+                                                                                                                      
+[22:12:53] INFO                run 4                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   50.59   49.65                                                                        
+                     ──────────────────────────                                                                       
+
+[22:12:54] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.640 encoder/train/loss: 1.714  encoder/val/acc: 22.614 encoder/val/loss: 
+                       1.716                                                                                          
+                                                                                                                      
+[22:14:34] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 64,                                                                          
+                        'encoder/train/acc': 22.76327133178711,                                                       
+                        'encoder/train/loss': 1.720194935798645,                                                      
+                        'encoder/val/acc': 23.977272033691406,                                                        
+                        'encoder/val/loss': 1.7171547412872314                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 52.143 train/loss: 1.502  val/acc: 51.250 val/loss: 1.559                           
+                                                                                                                      
+[22:15:12] INFO                run 5                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   49.91   49.70                                                                        
+                     ──────────────────────────                                                                       
+
+[22:15:13] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.544 encoder/train/loss: 1.714  encoder/val/acc: 23.106 encoder/val/loss: 
+                       1.714                                                                                          
+                                                                                                                      
+[22:16:53] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 64,                                                                          
+                        'encoder/train/acc': 22.442209243774414,                                                      
+                        'encoder/train/loss': 1.7196311950683594,                                                     
+                        'encoder/val/acc': 24.545454025268555,                                                        
+                        'encoder/val/loss': 1.7181159257888794                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:39           
+                       train/acc: 51.937 train/loss: 1.559  val/acc: 51.250 val/loss: 1.612                           
+                                                                                                                      
+[22:17:32] INFO                run 6                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   49.89   49.73                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.66 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+[22:17:33] INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.656 encoder/train/loss: 1.711  encoder/val/acc: 23.182 encoder/val/loss: 
+                       1.716                                                                                          
+                                                                                                                      
+[22:19:12] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 31,                                                                          
+                        'encoder/train/acc': 21.917808532714844,                                                      
+                        'encoder/train/loss': 1.7352675199508667,                                                     
+                        'encoder/val/acc': 23.18181610107422,                                                         
+                        'encoder/val/loss': 1.7354745864868164                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 52.300 train/loss: 1.525  val/acc: 51.288 val/loss: 1.555                           
+                                                                                                                      
+[22:19:51] INFO                run 7                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   50.28   49.81                                                                        
+                     ──────────────────────────                                                                       
+
+[22:19:52] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.833 encoder/train/loss: 1.710  encoder/val/acc: 21.591 encoder/val/loss: 
+                       1.717                                                                                          
+                                                                                                                      
+[22:21:31] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 37,                                                                          
+                        'encoder/train/acc': 21.923158645629883,                                                      
+                        'encoder/train/loss': 1.7322304248809814,                                                     
+                        'encoder/val/acc': 23.446969985961914,                                                        
+                        'encoder/val/loss': 1.7314107418060303                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 51.427 train/loss: 1.518  val/acc: 50.795 val/loss: 1.574                           
+                                                                                                                      
+[22:22:10] INFO                run 8                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   50.32   49.87                                                                        
+                     ──────────────────────────                                                                       
+
+           INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.619 encoder/train/loss: 1.715  encoder/val/acc: 22.841 encoder/val/loss: 
+                       1.718                                                                                          
+                                                                                                                      
+[22:23:50] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 97,                                                                          
+                        'encoder/train/acc': 22.575984954833984,                                                      
+                        'encoder/train/loss': 1.714020848274231,                                                      
+                        'encoder/val/acc': 23.636363983154297,                                                        
+                        'encoder/val/loss': 1.7180585861206055                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 51.237 train/loss: 1.593  val/acc: 50.265 val/loss: 1.654                           
+                                                                                                                      
+[22:24:29] INFO                run 9                                                                       train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   50.15   49.91                                                                        
+                     ──────────────────────────                                                                       
+
+[22:24:30] INFO     bounding the number of neighbors per node...done in 0.65 s                         dpdgc_ndp.py:96
+debugging...data.x tensor([[1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.],
+        [1., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0') debugging...
+           INFO     pretraining adj encoder (MLP_A)                                                   dpdgc_inf.py:125
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:39           
+                       encoder/train/acc: 22.539 encoder/train/loss: 1.713  encoder/val/acc: 23.598 encoder/val/loss: 
+                       1.711                                                                                          
+                                                                                                                      
+[22:26:09] INFO     adj encoder pretrain statistics                                                    dpdgc_inf.py:99
+           INFO     {                                                                                 dpdgc_inf.py:100
+                        'encoder/epoch': 94,                                                                          
+                        'encoder/train/acc': 22.570632934570312,                                                      
+                        'encoder/train/loss': 1.7121275663375854,                                                     
+                        'encoder/val/acc': 23.67424201965332,                                                         
+                        'encoder/val/loss': 1.7111443281173706                                                        
+                    }                                                                                                 
+           INFO     training classifier                                                                     base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:38           
+                       train/acc: 51.997 train/loss: 1.486  val/acc: 52.121 val/loss: 1.499                           
+                                                                                                                      
+[22:26:47] INFO                run 10                                                                      train.py:74
+                     ──────────────────────────                                                                       
+                      metric     last    mean                                                                         
+                     ──────────────────────────                                                                       
+                      test/acc   50.85   50.00                                                                        
+                     ──────────────────────────                                                                       
+
+
+[22:26:48] INFO     Total running time: 1396.64 seconds.                                                  train.py:127
+           INFO     Max GPU memory used = 3.40 GB                                                         train.py:136
+                                                                                                                      

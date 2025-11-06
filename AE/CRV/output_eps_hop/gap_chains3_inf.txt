@@ -1,0 +1,832 @@
+the value of hops is 20 ; the dataset is chains
+[21:02:48] INFO     importing modules...done in 2.21 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            20            batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:02:49] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.34 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:02:51] INFO     computing aggregations...done in 0.01 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 100.000 train/loss: 0.005  val/acc: 86.667    
+                       val/loss: 0.399                                          
+                                                                                
+[21:02:53] INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   90.00   90.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.565      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.656          
+                                                                                
+           INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 100.000 train/loss: 0.006  val/acc: 86.667    
+                       val/loss: 0.231                                          
+                                                                                
+[21:02:55] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   90.00   90.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 73.333 encoder/train/loss: 0.543      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.680          
+                                                                                
+[21:02:56] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:02
+                       train/acc: 100.000 train/loss: 0.004  val/acc: 100.000   
+                       val/loss: 0.021                                          
+                                                                                
+[21:02:58] INFO                 run 3                                train.py:74
+                     ───────────────────────────                                
+                      metric     last     mean                                  
+                     ───────────────────────────                                
+                      test/acc   100.00   93.33                                 
+                     ───────────────────────────                                
+
+
+           INFO     Total running time: 10.00 seconds.              train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 17 ; the dataset is chains
+[21:03:01] INFO     importing modules...done in 2.37 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            17            batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:03:02] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.25 s                 train.py:35
+[21:03:03] INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:03:04] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 100.000 train/loss: 0.029  val/acc: 80.000    
+                       val/loss: 0.540                                          
+                                                                                
+[21:03:06] INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   86.67   86.67                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 60.000 encoder/train/loss: 0.692      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.683          
+                                                                                
+[21:03:07] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.092  val/acc: 100.000    
+                       val/loss: 0.040                                          
+                                                                                
+[21:03:09] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   95.00   90.83                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.600      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.705          
+                                                                                
+[21:03:10] INFO     computing aggregations...done in 0.01 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 100.000 train/loss: 0.073  val/acc: 100.000   
+                       val/loss: 0.018                                          
+                                                                                
+[21:03:12] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   90.00   90.56                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 10.36 seconds.              train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 15 ; the dataset is chains
+[21:03:15] INFO     importing modules...done in 2.24 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            15            batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:03:16] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.22 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:02
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:03:18] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.102  val/acc: 73.333     
+                       val/loss: 0.392                                          
+                                                                                
+[21:03:19] INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   80.00   80.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 73.333 encoder/train/loss: 0.510      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.784          
+                                                                                
+[21:03:20] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.098  val/acc: 100.000    
+                       val/loss: 0.101                                          
+                                                                                
+[21:03:21] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   86.67   83.33                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.654      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.796          
+                                                                                
+[21:03:22] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.085  val/acc: 80.000     
+                       val/loss: 0.211                                          
+                                                                                
+[21:03:24] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   81.67   82.78                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 9.50 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 13 ; the dataset is chains
+[21:03:27] INFO     importing modules...done in 2.21 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            13            batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:03:28] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.14 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:03:30] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 86.667 train/loss: 0.154  val/acc: 80.000     
+                       val/loss: 0.214                                          
+                                                                                
+           INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   81.67   81.67                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 40.000 encoder/train/loss: 0.752      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.718          
+                                                                                
+[21:03:31] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.104  val/acc: 100.000    
+                       val/loss: 0.110                                          
+                                                                                
+[21:03:32] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   86.67   84.17                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 60.000 encoder/train/loss: 0.762      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.776          
+                                                                                
+[21:03:33] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 93.333 train/loss: 0.097  val/acc: 86.667     
+                       val/loss: 0.181                                          
+                                                                                
+[21:03:35] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   81.67   83.33                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 8.20 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 11 ; the dataset is chains
+[21:03:38] INFO     importing modules...done in 2.24 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            11            batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:03:40] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.23 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:03:41] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 86.667 train/loss: 0.197  val/acc: 66.667     
+                       val/loss: 1.008                                          
+                                                                                
+           INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   71.67   71.67                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.644      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.747          
+                                                                                
+[21:03:42] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 86.667 train/loss: 0.209  val/acc: 93.333     
+                       val/loss: 0.178                                          
+                                                                                
+[21:03:44] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   76.67   74.17                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 46.667 encoder/train/loss: 0.714      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.644          
+                                                                                
+[21:03:45] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 80.000 train/loss: 0.270  val/acc: 73.333     
+                       val/loss: 0.285                                          
+                                                                                
+[21:03:47] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   81.67   76.67                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 8.90 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 9 ; the dataset is chains
+[21:03:50] INFO     importing modules...done in 2.38 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            9             batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:03:52] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.14 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:03:53] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 86.667 train/loss: 0.259  val/acc: 66.667     
+                       val/loss: 1.164                                          
+                                                                                
+[21:03:54] INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   71.67   71.67                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 53.333 encoder/train/loss: 0.649      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.775          
+                                                                                
+[21:03:56] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 80.000 train/loss: 0.306  val/acc: 80.000     
+                       val/loss: 0.564                                          
+                                                                                
+[21:03:57] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   76.67   74.17                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 80.000 encoder/train/loss: 0.424      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.697          
+                                                                                
+[21:03:59] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 86.667 train/loss: 0.270  val/acc: 93.333     
+                       val/loss: 0.240                                          
+                                                                                
+[21:04:00] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   76.67   75.00                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 9.39 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 7 ; the dataset is chains
+[21:04:03] INFO     importing modules...done in 2.26 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            7             batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:04:04] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.20 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:02
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:04:06] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 86.667 train/loss: 0.331  val/acc: 60.000     
+                       val/loss: 1.418                                          
+                                                                                
+[21:04:08] INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   65.00   65.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 73.333 encoder/train/loss: 0.532      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.699          
+                                                                                
+[21:04:09] INFO     computing aggregations...done in 0.01 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       train/acc: 86.667 train/loss: 0.340  val/acc: 60.000     
+                       val/loss: 0.750                                          
+                                                                                
+[21:04:10] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   71.67   68.33                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 60.000 encoder/train/loss: 0.625      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.699          
+                                                                                
+           INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 86.667 train/loss: 0.322  val/acc: 66.667     
+                       val/loss: 0.480                                          
+                                                                                
+[21:04:11] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   73.33   70.00                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 8.50 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                
+the value of hops is 5 ; the dataset is chains
+[21:04:14] INFO     importing modules...done in 2.16 s               train.py:16
+
+           INFO                    program arguments                utils.py:156
+                     ─────────────────────────────────────────────              
+                      method:          gap-inf       optimizer:                 
+                      adam                                                      
+                      dataset:         chains                                   
+                      learning_rate:    0.001                                   
+                      data_dir:        exp_datasets                             
+                      weight_decay:     0.0                                     
+                      hops:            5             batch_size:                
+                      full                                                      
+                      hidden_dim:      64                                       
+                      full_batch_eval:  True                                    
+                      encoder_layers:  2             device:                    
+                      cuda                                                      
+                      base_layers:     1                                        
+                      val_interval:     1                                       
+                      head_layers:     1             seed:                      
+                      12345                                                     
+                      combine:         cat           repeats:                   
+                      3                                                         
+                      activation:      selu          csbm_phi:                  
+                      0.0                                                       
+                      dropout:         0.5           debug:                     
+                      False                                                     
+                      batch_norm:      True          logger:                    
+                      csv                                                       
+                      encoder_epochs:  100           project:                   
+                      GAP                                                       
+                      epochs:          100           output_dir:                
+                      ./output                                                  
+                     ─────────────────────────────────────────────              
+
+DatasetLoader chains exp_datasets
+[21:04:16] INFO                    dataset: chains                 loader.py:134
+                     ────────────────────────────────────────────               
+                      nodes:      90  mean degree:         1.93                 
+                      edges:     174  median degree:       2.0                  
+                      features:    5  train/val/test (%):                       
+                      16.7/16.7/66.7                                            
+                      classes:     2  baseline acc (%):    51.67                
+                     ────────────────────────────────────────────               
+
+           INFO     loading dataset...done in 1.30 s                 train.py:35
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:01
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.614      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.690          
+                                                                                
+[21:04:18] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 80.000 train/loss: 0.442  val/acc: 60.000     
+                       val/loss: 0.612                                          
+                                                                                
+           INFO                run 1                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   65.00   65.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 66.667 encoder/train/loss: 0.602      
+                       encoder/val/acc: 66.667 encoder/val/loss: 0.686          
+                                                                                
+[21:04:19] INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 80.000 train/loss: 0.405  val/acc: 53.333     
+                       val/loss: 0.793                                          
+                                                                                
+[21:04:20] INFO                run 2                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   55.00   60.00                                  
+                     ──────────────────────────                                 
+
+           INFO     pretraining encoder                           gap_inf.py:181
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       encoder/train/acc: 53.333 encoder/train/loss: 0.738      
+                       encoder/val/acc: 33.333 encoder/val/loss: 0.738          
+                                                                                
+           INFO     computing aggregations...done in 0.00 s       gap_inf.py:221
+           INFO     training classifier                               base.py:92
+                       overal progress 100/100 epochs ━━━━━━━━━━━━━ 100% 0:00:00
+                       train/acc: 80.000 train/loss: 0.399  val/acc: 53.333     
+                       val/loss: 0.799                                          
+                                                                                
+[21:04:21] INFO                run 3                                 train.py:74
+                     ──────────────────────────                                 
+                      metric     last    mean                                   
+                     ──────────────────────────                                 
+                      test/acc   55.00   58.33                                  
+                     ──────────────────────────                                 
+
+
+           INFO     Total running time: 6.85 seconds.               train.py:127
+           INFO     Max GPU memory used = 0.00 GB                   train.py:136
+                                                                                

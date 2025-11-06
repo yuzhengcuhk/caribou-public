@@ -1,0 +1,28 @@
+# Minimal requirements for running caribou
+# Python 3.9.20
+# Created based on successful test run
+
+# Core dependencies
+torch==1.13.1
+numpy<2.0
+torchmetrics==0.9.3
+rich
+scipy
+class-resolver
+autodp
+opacus
+ninja
+tabulate
+
+# Data processing
+pandas
+scikit-learn
+networkx
+ogb
+
+# PyTorch Geometric and extensions
+torch-geometric
+# Note: Install torch-sparse and torch-scatter with matching CUDA version
+# For PyTorch 1.13.1 with CUDA 11.7:
+# pip install torch-sparse==0.6.17 torch-scatter==2.1.1 -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
+

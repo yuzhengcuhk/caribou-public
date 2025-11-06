@@ -1,0 +1,8 @@
+hops,dataset,max_accuracy,epsilon
+7,chains,84.38,-1.0
+7,chains,59.38,1.0
+7,chains,59.38,2.0
+7,chains,59.38,4.0
+7,chains,59.38,8.0
+7,chains,59.38,16.0
+7,chains,59.38,32.0
