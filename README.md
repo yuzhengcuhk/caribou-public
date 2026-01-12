@@ -6,7 +6,7 @@
 
 This README guides evaluators to (1) obtain the code, (2) build the environment, and (3) reproduce the results referenced in the AE appendix: **PU** (privacy–utility), **CRV** (curves/visualizations), and **OV** (overhead).
 
-
+[**Available**] [**Functional**] [**Reproduced**]
 
 ---
 
