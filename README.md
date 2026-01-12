@@ -1,8 +1,12 @@
 # CARIBOU — Artifact Evaluation README
 
-**CARIBOU** is a privacy-preserving GNN framework that couples a **Contractive Graph Layer (CGL)** with **convergent privacy accounting**, enabling deeper aggregation under **edge-level DP (EDP)** and **node-level DP (NDP)** with superior utility.
+**CARIBOU** is a privacy-preserving GNN framework that couples a **Contractive Graph Layer (CGL)** with **convergent privacy accounting**, enabling deeper aggregation under **edge-level DP (EDP)** and **node-level DP (NDP)** with superior utility. For technical details and full methodology, please refer to our paper:
+
+**[Convergent Privacy Framework with Contractive GNN Layers for Multi-hop Aggregations](https://arxiv.org/abs/2506.22727)** *Appearing in the 33rd Network and Distributed System Security Symposium (NDSS 2026)*
 
 This README guides evaluators to (1) obtain the code, (2) build the environment, and (3) reproduce the results referenced in the AE appendix: **PU** (privacy–utility), **CRV** (curves/visualizations), and **OV** (overhead).
+
+
 
 ---
 
@@ -156,6 +160,13 @@ setup_minimal_env.sh  # environment bootstrap script
 
 ## 9) Citation
 
-If you use CARIBOU or this artifact, please cite the paper (see the main manuscript).
+If you use CARIBOU or this artifact, please cite the paper.
+
+@inproceedings{zheng2026convergent,
+  title={Convergent Privacy Framework with Contractive GNN Layers for Multi-hop Aggregations},
+  author={Zheng, Yu and Li, Chenang and Li, Zhou and Wang, Qingsong},
+  booktitle={Network and Distributed System Security Symposium (NDSS)},
+  year={2026}
+}
 
 ---
