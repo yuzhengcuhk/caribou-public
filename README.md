@@ -161,12 +161,13 @@ setup_minimal_env.sh  # environment bootstrap script
 ## 9) Citation
 
 If you use CARIBOU or this artifact, please cite the paper.
-
+```
 @inproceedings{zheng2026convergent,
   title={Convergent Privacy Framework with Contractive GNN Layers for Multi-hop Aggregations},
   author={Zheng, Yu and Li, Chenang and Li, Zhou and Wang, Qingsong},
   booktitle={Network and Distributed System Security Symposium (NDSS)},
   year={2026}
 }
+```
 
 ---
