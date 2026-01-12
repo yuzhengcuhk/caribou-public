@@ -156,7 +156,7 @@ setup_minimal_env.sh  # environment bootstrap script
 
 **CARIBOU** is released under the **MIT License**. You may use, modify, and redistribute the software with attribution; the software is provided *as is*, without warranty. See `LICENSE` for the full text. Third-party dependencies remain under their respective licenses.
 
-We would like to thank the [gap](https://github.com/dpdgc/gap) and [dpdgc](https://github.com/dpdgc/dpdgc) repositories for implementation reference and baselines.
+We would like to thank the [gap](https://github.com/sisaman/GAP) and [dpdgc](https://github.com/thupchnsky/dp-gnn) repositories for implementation reference and baselines.
 
 ---
 
