@@ -1,8 +1,12 @@
+[![Slides](https://img.shields.io/badge/Slides-Download-blue?style=for-the-badge&logo=googleslides)](https://github.com/yuzhengcuhk/slides_collection/blob/main/26-NDSS-Caribou.pdf)
+[![Poster](https://img.shields.io/badge/Poster-Download-orange?style=for-the-badge&logo=adobeacrobatreader)](https://github.com/yuzhengcuhk/slides_collection/blob/main/26-NDSS-Caribou-poster.pdf)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2506.22727)
+
 # CARIBOU — Artifact Evaluation README
 
 **CARIBOU** is a privacy-preserving GNN framework that couples a **Contractive Graph Layer (CGL)** with **convergent privacy accounting**, enabling deeper aggregation under **edge-level DP (EDP)** and **node-level DP (NDP)** with superior utility. For technical details and full methodology, please refer to our paper:
 
-**[Convergent Privacy Framework with Contractive GNN Layers for Multi-hop Aggregations](https://arxiv.org/abs/2506.22727)** *appearing in the 33rd Network and Distributed System Security Symposium (NDSS 2026)*
+**[Convergent Privacy Framework with Contractive GNN Layers for Multi-hop Aggregations](https://arxiv.org/abs/2506.22727)** *appearing in the 33rd Network and Distributed System Security Symposium (NDSS 2026)* 
 
 This README guides evaluators to (1) obtain the code, (2) build the environment, and (3) reproduce the results referenced in the AE appendix: **PU** (privacy–utility), **CRV** (curves/visualizations), and **OV** (overhead).
 
